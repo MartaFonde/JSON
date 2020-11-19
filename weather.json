@@ -1,0 +1,41 @@
+{
+    "coord": {
+        "lon": -8.72,
+        "lat": 42.23
+    },
+    "weather": [{
+        "id": 741,
+        "main": "Fog",
+        "description": "bruma",
+        "icon": "50d"
+    }],
+    "base": "stations",
+    "main": {
+        "temp": 283.74,
+        "feels_like": 282.13,
+        "temp_min": 281.15,
+        "temp_max": 285.93,
+        "pressure": 1027,
+        "humidity": 100
+    },
+    "visibility": 100,
+    "wind": {
+        "speed": 2.6,
+        "deg": 220
+    },
+    "clouds": {
+        "all": 90
+    },
+    "dt": 1604995699,
+    "sys": {
+        "type": 1,
+        "id": 6440,
+        "country": "ES",
+        "sunrise": 1604992776,
+        "sunset": 1605028692
+    },
+    "timezone": 3600,
+    "id": 3105976,
+    "name": "Vigo",
+    "cod": 200
+}

@@ -1,0 +1,706 @@
+{
+    "message": "accurate",
+    "cod": "200",
+    "count": 20,
+    "list": [{
+            "id": 3105976,
+            "name": "Vigo",
+            "coord": {
+                "lat": 42.23,
+                "lon": -8.72
+            },
+            "main": {
+                "temp": 283.76,
+                "feels_like": 282.15,
+                "temp_min": 281.15,
+                "temp_max": 285.93,
+                "pressure": 1027,
+                "humidity": 100
+            },
+            "dt": 1604995367,
+            "wind": {
+                "speed": 2.6,
+                "deg": 220
+            },
+            "sys": {
+                "country": "ES"
+            },
+            "rain": null,
+            "snow": null,
+            "clouds": {
+                "all": 90
+            },
+            "weather": [{
+                "id": 741,
+                "main": "Fog",
+                "description": "fog",
+                "icon": "50d"
+            }]
+        },
+        {
+            "id": 3121264,
+            "name": "Coia",
+            "coord": {
+                "lat": 42.22,
+                "lon": -8.75
+            },
+            "main": {
+                "temp": 283.91,
+                "feels_like": 282.35,
+                "temp_min": 281.15,
+                "temp_max": 285.93,
+                "pressure": 1027,
+                "humidity": 100
+            },
+            "dt": 1604995690,
+            "wind": {
+                "speed": 2.6,
+                "deg": 220
+            },
+            "sys": {
+                "country": "ES"
+            },
+            "rain": null,
+            "snow": null,
+            "clouds": {
+                "all": 90
+            },
+            "weather": [{
+                "id": 741,
+                "main": "Fog",
+                "description": "fog",
+                "icon": "50d"
+            }]
+        },
+        {
+            "id": 3128446,
+            "name": "Beade",
+            "coord": {
+                "lat": 42.2,
+                "lon": -8.7
+            },
+            "main": {
+                "temp": 283.72,
+                "feels_like": 282.1,
+                "temp_min": 281.15,
+                "temp_max": 285.93,
+                "pressure": 1027,
+                "humidity": 100
+            },
+            "dt": 1604995692,
+            "wind": {
+                "speed": 2.6,
+                "deg": 220
+            },
+            "sys": {
+                "country": "ES"
+            },
+            "rain": null,
+            "snow": null,
+            "clouds": {
+                "all": 90
+            },
+            "weather": [{
+                "id": 741,
+                "main": "Fog",
+                "description": "fog",
+                "icon": "50d"
+            }]
+        },
+        {
+            "id": 3130625,
+            "name": "Alcabre",
+            "coord": {
+                "lat": 42.22,
+                "lon": -8.77
+            },
+            "main": {
+                "temp": 283.94,
+                "feels_like": 282.38,
+                "temp_min": 281.15,
+                "temp_max": 285.93,
+                "pressure": 1027,
+                "humidity": 100
+            },
+            "dt": 1604995693,
+            "wind": {
+                "speed": 2.6,
+                "deg": 220
+            },
+            "sys": {
+                "country": "ES"
+            },
+            "rain": null,
+            "snow": null,
+            "clouds": {
+                "all": 90
+            },
+            "weather": [{
+                "id": 741,
+                "main": "Fog",
+                "description": "fog",
+                "icon": "50d"
+            }]
+        },
+        {
+            "id": 3108234,
+            "name": "Teis",
+            "coord": {
+                "lat": 42.27,
+                "lon": -8.67
+            },
+            "main": {
+                "temp": 283.43,
+                "feels_like": 281.73,
+                "temp_min": 281.15,
+                "temp_max": 285.93,
+                "pressure": 1027,
+                "humidity": 100
+            },
+            "dt": 1604995685,
+            "wind": {
+                "speed": 2.6,
+                "deg": 220
+            },
+            "sys": {
+                "country": "ES"
+            },
+            "rain": null,
+            "snow": null,
+            "clouds": {
+                "all": 90
+            },
+            "weather": [{
+                "id": 741,
+                "main": "Fog",
+                "description": "fog",
+                "icon": "50d"
+            }]
+        },
+        {
+            "id": 6360230,
+            "name": "Moaña",
+            "coord": {
+                "lat": 42.29,
+                "lon": -8.71
+            },
+            "main": {
+                "temp": 283.57,
+                "feels_like": 281.91,
+                "temp_min": 281.15,
+                "temp_max": 285.93,
+                "pressure": 1027,
+                "humidity": 100
+            },
+            "dt": 1604995762,
+            "wind": {
+                "speed": 2.6,
+                "deg": 220
+            },
+            "sys": {
+                "country": "ES"
+            },
+            "rain": null,
+            "snow": null,
+            "clouds": {
+                "all": 90
+            },
+            "weather": [{
+                "id": 741,
+                "main": "Fog",
+                "description": "fog",
+                "icon": "50d"
+            }]
+        },
+        {
+            "id": 3116653,
+            "name": "Moaña",
+            "coord": {
+                "lat": 42.28,
+                "lon": -8.75
+            },
+            "main": {
+                "temp": 283.72,
+                "feels_like": 282.1,
+                "temp_min": 281.15,
+                "temp_max": 285.93,
+                "pressure": 1027,
+                "humidity": 100
+            },
+            "dt": 1604995367,
+            "wind": {
+                "speed": 2.6,
+                "deg": 220
+            },
+            "sys": {
+                "country": "ES"
+            },
+            "rain": null,
+            "snow": null,
+            "clouds": {
+                "all": 90
+            },
+            "weather": [{
+                "id": 741,
+                "main": "Fog",
+                "description": "fog",
+                "icon": "50d"
+            }]
+        },
+        {
+            "id": 3126577,
+            "name": "Cangas do Morrazo",
+            "coord": {
+                "lat": 42.26,
+                "lon": -8.78
+            },
+            "main": {
+                "temp": 283.83,
+                "feels_like": 282.24,
+                "temp_min": 281.15,
+                "temp_max": 285.93,
+                "pressure": 1027,
+                "humidity": 100
+            },
+            "dt": 1604995367,
+            "wind": {
+                "speed": 2.6,
+                "deg": 220
+            },
+            "sys": {
+                "country": "ES"
+            },
+            "rain": null,
+            "snow": null,
+            "clouds": {
+                "all": 90
+            },
+            "weather": [{
+                "id": 741,
+                "main": "Fog",
+                "description": "fog",
+                "icon": "50d"
+            }]
+        },
+        {
+            "id": 3108353,
+            "name": "Tameiga",
+            "coord": {
+                "lat": 42.2,
+                "lon": -8.65
+            },
+            "main": {
+                "temp": 283.43,
+                "feels_like": 281.73,
+                "temp_min": 281.15,
+                "temp_max": 285.93,
+                "pressure": 1027,
+                "humidity": 100
+            },
+            "dt": 1604995685,
+            "wind": {
+                "speed": 2.6,
+                "deg": 220
+            },
+            "sys": {
+                "country": "ES"
+            },
+            "rain": null,
+            "snow": null,
+            "clouds": {
+                "all": 90
+            },
+            "weather": [{
+                "id": 741,
+                "main": "Fog",
+                "description": "fog",
+                "icon": "50d"
+            }]
+        },
+        {
+            "id": 3107575,
+            "name": "Trasmañó",
+            "coord": {
+                "lat": 42.27,
+                "lon": -8.65
+            },
+            "main": {
+                "temp": 283.36,
+                "feels_like": 281.64,
+                "temp_min": 281.15,
+                "temp_max": 285.93,
+                "pressure": 1027,
+                "humidity": 100
+            },
+            "dt": 1604995684,
+            "wind": {
+                "speed": 2.6,
+                "deg": 220
+            },
+            "sys": {
+                "country": "ES"
+            },
+            "rain": null,
+            "snow": null,
+            "clouds": {
+                "all": 90
+            },
+            "weather": [{
+                "id": 741,
+                "main": "Fog",
+                "description": "fog",
+                "icon": "50d"
+            }]
+        },
+        {
+            "id": 6360254,
+            "name": "Vigo",
+            "coord": {
+                "lat": 42.22,
+                "lon": -8.81
+            },
+            "main": {
+                "temp": 283.92,
+                "feels_like": 282.36,
+                "temp_min": 281.15,
+                "temp_max": 285.93,
+                "pressure": 1027,
+                "humidity": 100
+            },
+            "dt": 1604995762,
+            "wind": {
+                "speed": 2.6,
+                "deg": 220
+            },
+            "sys": {
+                "country": "ES"
+            },
+            "rain": null,
+            "snow": null,
+            "clouds": {
+                "all": 90
+            },
+            "weather": [{
+                "id": 741,
+                "main": "Fog",
+                "description": "fog",
+                "icon": "50d"
+            }]
+        },
+        {
+            "id": 3123866,
+            "name": "Domaio",
+            "coord": {
+                "lat": 42.3,
+                "lon": -8.68
+            },
+            "main": {
+                "temp": 283.49,
+                "feels_like": 281.81,
+                "temp_min": 281.15,
+                "temp_max": 285.93,
+                "pressure": 1027,
+                "humidity": 100
+            },
+            "dt": 1604995691,
+            "wind": {
+                "speed": 2.6,
+                "deg": 220
+            },
+            "sys": {
+                "country": "ES"
+            },
+            "rain": null,
+            "snow": null,
+            "clouds": {
+                "all": 90
+            },
+            "weather": [{
+                "id": 741,
+                "main": "Fog",
+                "description": "fog",
+                "icon": "50d"
+            }]
+        },
+        {
+            "id": 3120923,
+            "name": "Guizán",
+            "coord": {
+                "lat": 42.22,
+                "lon": -8.62
+            },
+            "main": {
+                "temp": 283.23,
+                "feels_like": 281.48,
+                "temp_min": 281.15,
+                "temp_max": 285.93,
+                "pressure": 1027,
+                "humidity": 100
+            },
+            "dt": 1604995690,
+            "wind": {
+                "speed": 2.6,
+                "deg": 220
+            },
+            "sys": {
+                "country": "ES"
+            },
+            "rain": null,
+            "snow": null,
+            "clouds": {
+                "all": 90
+            },
+            "weather": [{
+                "id": 741,
+                "main": "Fog",
+                "description": "fog",
+                "icon": "50d"
+            }]
+        },
+        {
+            "id": 3104575,
+            "name": "Vincios",
+            "coord": {
+                "lat": 42.15,
+                "lon": -8.73
+            },
+            "main": {
+                "temp": 283.84,
+                "feels_like": 282.26,
+                "temp_min": 281.15,
+                "temp_max": 285.93,
+                "pressure": 1027,
+                "humidity": 100
+            },
+            "dt": 1604995683,
+            "wind": {
+                "speed": 2.6,
+                "deg": 220
+            },
+            "sys": {
+                "country": "ES"
+            },
+            "rain": null,
+            "snow": null,
+            "clouds": {
+                "all": 90
+            },
+            "weather": [{
+                "id": 741,
+                "main": "Fog",
+                "description": "fog",
+                "icon": "50d"
+            }]
+        },
+        {
+            "id": 3107695,
+            "name": "Torroso",
+            "coord": {
+                "lat": 42.2,
+                "lon": -8.62
+            },
+            "main": {
+                "temp": 283.33,
+                "feels_like": 281.6,
+                "temp_min": 281.15,
+                "temp_max": 285.93,
+                "pressure": 1027,
+                "humidity": 100
+            },
+            "dt": 1604995684,
+            "wind": {
+                "speed": 2.6,
+                "deg": 220
+            },
+            "sys": {
+                "country": "ES"
+            },
+            "rain": null,
+            "snow": null,
+            "clouds": {
+                "all": 90
+            },
+            "weather": [{
+                "id": 741,
+                "main": "Fog",
+                "description": "fog",
+                "icon": "50d"
+            }]
+        },
+        {
+            "id": 3128319,
+            "name": "Beluso",
+            "coord": {
+                "lat": 42.32,
+                "lon": -8.75
+            },
+            "main": {
+                "temp": 283.64,
+                "feels_like": 282,
+                "temp_min": 281.15,
+                "temp_max": 285.93,
+                "pressure": 1027,
+                "humidity": 100
+            },
+            "dt": 1604995692,
+            "wind": {
+                "speed": 2.6,
+                "deg": 220
+            },
+            "sys": {
+                "country": "ES"
+            },
+            "rain": null,
+            "snow": null,
+            "clouds": {
+                "all": 90
+            },
+            "weather": [{
+                "id": 741,
+                "main": "Fog",
+                "description": "fog",
+                "icon": "50d"
+            }]
+        },
+        {
+            "id": 6360211,
+            "name": "Cangas",
+            "coord": {
+                "lat": 42.27,
+                "lon": -8.83
+            },
+            "main": {
+                "temp": 283.8,
+                "feels_like": 282.21,
+                "temp_min": 281.15,
+                "temp_max": 285.93,
+                "pressure": 1027,
+                "humidity": 100
+            },
+            "dt": 1604995762,
+            "wind": {
+                "speed": 2.6,
+                "deg": 220
+            },
+            "sys": {
+                "country": "ES"
+            },
+            "rain": null,
+            "snow": null,
+            "clouds": {
+                "all": 90
+            },
+            "weather": [{
+                "id": 741,
+                "main": "Fog",
+                "description": "fog",
+                "icon": "50d"
+            }]
+        },
+        {
+            "id": 3116058,
+            "name": "Mos",
+            "coord": {
+                "lat": 42.2,
+                "lon": -8.6
+            },
+            "main": {
+                "temp": 283.31,
+                "feels_like": 281.58,
+                "temp_min": 281.15,
+                "temp_max": 285.93,
+                "pressure": 1027,
+                "humidity": 100
+            },
+            "dt": 1604995689,
+            "wind": {
+                "speed": 2.6,
+                "deg": 220
+            },
+            "sys": {
+                "country": "ES"
+            },
+            "rain": null,
+            "snow": null,
+            "clouds": {
+                "all": 90
+            },
+            "weather": [{
+                "id": 741,
+                "main": "Fog",
+                "description": "fog",
+                "icon": "50d"
+            }]
+        },
+        {
+            "id": 3112154,
+            "name": "Redondela",
+            "coord": {
+                "lat": 42.28,
+                "lon": -8.61
+            },
+            "main": {
+                "temp": 283.34,
+                "feels_like": 281.62,
+                "temp_min": 281.15,
+                "temp_max": 285.93,
+                "pressure": 1027,
+                "humidity": 100
+            },
+            "dt": 1604995367,
+            "wind": {
+                "speed": 2.6,
+                "deg": 220
+            },
+            "sys": {
+                "country": "ES"
+            },
+            "rain": null,
+            "snow": null,
+            "clouds": {
+                "all": 90
+            },
+            "weather": [{
+                "id": 741,
+                "main": "Fog",
+                "description": "fog",
+                "icon": "50d"
+            }]
+        },
+        {
+            "id": 3113157,
+            "name": "Porriño",
+            "coord": {
+                "lat": 42.16,
+                "lon": -8.62
+            },
+            "main": {
+                "temp": 283.51,
+                "feels_like": 281.83,
+                "temp_min": 281.15,
+                "temp_max": 285.93,
+                "pressure": 1027,
+                "humidity": 100
+            },
+            "dt": 1604995367,
+            "wind": {
+                "speed": 2.6,
+                "deg": 220
+            },
+            "sys": {
+                "country": "ES"
+            },
+            "rain": null,
+            "snow": null,
+            "clouds": {
+                "all": 90
+            },
+            "weather": [{
+                "id": 741,
+                "main": "Fog",
+                "description": "fog",
+                "icon": "50d"
+            }]
+        }
+    ]
+}

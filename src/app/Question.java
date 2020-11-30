@@ -39,5 +39,13 @@ public class Question {
     public void setIncorrectAnswers(String[] incorrectAnswers) {
         this.incorrectAnswers = incorrectAnswers;
     }
+
+    public void mostrar(){
+        System.out.println(getQuest());
+        System.out.println("*"+getCorrectAnswer());                
+        for (String inAnsw : getIncorrectAnswers()) {
+            System.out.println(inAnsw);
+        }
+    }
     
 }

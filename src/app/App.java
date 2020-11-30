@@ -21,7 +21,7 @@ public class App {
         // Question[] q = f.questionsTrivia(obj);
         // f.mostrarTrivia(q);
 
-        JsonObject obj = f.eventos("lalin", 100, 25);
+        JsonObject obj = f.eventos("lalin", 100, 10);
         Evento[] eventos = f.eventosProx(obj);
         f.mostrarEventosInfo(eventos);
         f.mostrarEventosLugar(eventos);

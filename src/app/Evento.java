@@ -68,6 +68,20 @@ public class Evento {
     public void setCountry(String country) {
         this.country = country;
     }
+
+    public void infoEvento(){
+        System.out.println("Title: "+getTitle());
+        System.out.println("Description: "+getDescription());
+        System.out.println("Start time: "+getStartTime());
+    }
+
+    public void infoLugar(){
+        System.out.println("Title: "+getTitle());
+        System.out.println("City: "+getCity());
+        System.out.println("Venue name: "+getVenueName());
+        System.out.println("Venue address: "+getVenueAddress());
+        System.out.println("Country: "+getCountry());
+    }
     
     
 }

@@ -145,11 +145,7 @@ public class FuncJson {
 
     public void mostrarTrivia(Question[] questions){
         for (Question q : questions) {
-            System.out.println(q.getQuest());
-                System.out.println("*"+q.getCorrectAnswer());                
-            for (String inAnsw : q.getIncorrectAnswers()) {
-                System.out.println(inAnsw);
-            }
+            q.mostrar();
             System.out.println();            
         }
     }    
@@ -180,20 +176,14 @@ public class FuncJson {
 
     public void mostrarEventosInfo(Evento[] eventos){
         for (Evento evento : eventos) {
-            System.out.println("Title: "+evento.getTitle());
-            System.out.println("Description: "+evento.getDescription());
-            System.out.println("Start time: "+evento.getStartTime());
+            evento.infoEvento();
             System.out.println("\n-------------------\n");
         }
     }
 
     public void mostrarEventosLugar(Evento[] eventos){
         for (Evento evento : eventos) {
-            System.out.println("Title: "+evento.getTitle());
-            System.out.println("City: "+evento.getCity());
-            System.out.println("Venue name: "+evento.getVenueName());
-            System.out.println("Venue address: "+evento.getVenueAddress());
-            System.out.println("Country: "+evento.getCountry());
+            evento.infoLugar();
             System.out.println("\n-------------------\n");
         }
     }

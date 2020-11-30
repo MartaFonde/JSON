@@ -2,11 +2,18 @@ package app;
 
 public class Question {
     private String quest;
-    private String[] correctAnswer;
+    private String correctAnswer;
     private String[] incorrectAnswers;
 
-    public Question() {
 
+    public Question() {
+        
+    }
+
+    public Question(String quest, String correctAnswer, String[] incorrectAnswers) {
+        setQuest(quest);
+        setCorrectAnswer(correctAnswer);
+        setIncorrectAnswers(incorrectAnswers);
     }
 
     public String getQuest() {
@@ -17,11 +24,11 @@ public class Question {
         this.quest = quest;
     }
 
-    public String[] getCorrectAnswer() {
+    public String getCorrectAnswer() {
         return correctAnswer;
     }
 
-    public void setCorrectAnswer(String[] correctAnswer) {
+    public void setCorrectAnswer(String correctAnswer) {
         this.correctAnswer = correctAnswer;
     }
 

@@ -69,4 +69,14 @@ public class DatosMeteoCiudad {
         this.name = name;
     }
 
+    public void mostrar(){
+        System.out.println("Name: " + getName());
+        System.out.println("Date: " + getDate());
+        System.out.println("Temp: " + getTemp());
+        System.out.println("Humid: " + getHumidity());
+        System.out.println("Clouds: " + getClouds());
+        System.out.println("Wind: " + getWind());
+        System.out.println("Weather: " + getWeather());
+    }
+
 }

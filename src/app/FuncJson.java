@@ -76,10 +76,10 @@ public class FuncJson {
         return localizacion(lat, lon).getString("name");
     }
 
-    public Coordenada coord(JsonObject ciudad) { // parametro JsonObject temporal
-        Coordenada coord = new Coordenada();
-        coord.setLat(ciudad.getJsonObject("coord").getJsonNumber("lat").doubleValue());
-        coord.setLon(ciudad.getJsonObject("coord").getJsonNumber("lon").doubleValue());
+    public Coordenada coord(JsonObject ciudad) { 
+        Coordenada coord = new Coordenada(ciudad.getJsonObject("coord").getJsonNumber("lat").doubleValue(),
+                                            ciudad.getJsonObject("coord").getJsonNumber("lon").doubleValue());
+      
         return coord;
     }
 
@@ -88,15 +88,14 @@ public class FuncJson {
         return Instant.ofEpochSecond(unixTime).atZone(ZoneId.of("GMT+1")).format(formatter);
     }
 
-    public DatosMeteoCiudad MeteoCiudad(JsonObject ciudad) { // parametro JSonObject temporal
-        //JsonObject ciudad = ciudad(nombreCiudad);
+    public DatosMeteoCiudad meteoCiudad(JsonObject ciudad) { 
         DatosMeteoCiudad data = new DatosMeteoCiudad();
         long dt = (long) ciudad.getInt("dt");
         data.setName(ciudad.getString("name"));
         data.setDate(unixTimeToString(dt));
         data.setTemp(ciudad.getJsonObject("main").getJsonNumber("temp").doubleValue());
-        data.setHumidity(ciudad.getJsonObject("main").getJsonNumber("humidity").doubleValue());
-        data.setClouds(ciudad.getJsonObject("clouds").getJsonNumber("all").doubleValue());
+        data.setHumidity(ciudad.getJsonObject("main").getJsonNumber("humidity").intValue());
+        data.setClouds(ciudad.getJsonObject("clouds").getJsonNumber("all").intValue());
         data.setWind(ciudad.getJsonObject("wind").getJsonNumber("speed").doubleValue());
         data.setWeather(ciudad.getJsonArray("weather").getJsonObject(0).getJsonString("description").toString());
         return data;
@@ -104,23 +103,19 @@ public class FuncJson {
 
     public DatosMeteoCiudad[] colecMeteoCiudades(double lat, double lon, int n) {
         JsonObject datosCiudades = locProximas(lat, lon, n);
-        JsonArray lista = datosCiudades.getJsonArray("list"); // array de obj
+        JsonArray lista = datosCiudades.getJsonArray("list"); 
         DatosMeteoCiudad[] data = new DatosMeteoCiudad[n];
+
         for (int i = 0; i < lista.size(); i++) {
-            data[i] = MeteoCiudad(lista.getJsonObject(i));
+            data[i] = meteoCiudad(lista.getJsonObject(i));
             mostrarMeteoCiudad(data[i]);
+            System.out.println("\n-------------------\n");
         }
         return data;
     }
 
     public void mostrarMeteoCiudad(DatosMeteoCiudad data) {
-        System.out.println("Name: " + data.getName());
-        System.out.println("Date: " + data.getDate());
-        System.out.println("Temp: " + data.getTemp());
-        System.out.println("Humid: " + data.getHumidity());
-        System.out.println("Clouds: " + data.getClouds());
-        System.out.println("Wind: " + data.getWind());
-        System.out.println("Weather: " + data.getWeather());
+        data.mostrar();
     }
 
     public JsonObject trivia(){
@@ -131,23 +126,11 @@ public class FuncJson {
         JsonArray results = obj.getJsonArray("results");
         Question[] questions = new Question[results.size()];
         Question q;
+
         for (int i = 0; i < results.size(); i++) {
             q = new Question();
-            q.setQuest(results.getJsonObject(i).getString("question")); 
-                        
-            if(results.getJsonObject(i).get("correct_answer").getValueType() == JsonValue.ValueType.ARRAY){
-                JsonArray corrAnw = results.getJsonObject(i).getJsonArray("correct_answers");
-                String[] correctAnswer = new String[corrAnw.size()];
-                for (int k = 0; k < corrAnw.size(); k++) {
-                    correctAnswer[i] = corrAnw.getString(k);
-                }
-                q.setCorrectAnswer(correctAnswer);
-            }else if(results.getJsonObject(i).get("correct_answer").getValueType() == JsonValue.ValueType.STRING){
-                String[] correctAnswer = new String[1];
-                correctAnswer[0] = results.getJsonObject(i).getString("correct_answer");   
-                q.setCorrectAnswer(correctAnswer);             
-            }        
-
+            q.setQuest(results.getJsonObject(i).getString("question"));                         
+            q.setCorrectAnswer(results.getJsonObject(i).getString("correct_answer"));                         
             JsonArray incorrAnw = results.getJsonObject(i).getJsonArray("incorrect_answers");
             String[] incorrectAnswers = new String[incorrAnw.size()];
             for (int j = 0; j < incorrAnw.size(); j++) {
@@ -163,9 +146,7 @@ public class FuncJson {
     public void mostrarTrivia(Question[] questions){
         for (Question q : questions) {
             System.out.println(q.getQuest());
-            for (String correct : q.getCorrectAnswer()) {
-                System.out.println("*"+correct);                
-            }
+                System.out.println("*"+q.getCorrectAnswer());                
             for (String inAnsw : q.getIncorrectAnswers()) {
                 System.out.println(inAnsw);
             }
@@ -197,20 +178,27 @@ public class FuncJson {
         return eventos;
     }
 
-    public void mostrarEventos(Evento[] eventos){
+    public void mostrarEventosInfo(Evento[] eventos){
         for (Evento evento : eventos) {
             System.out.println("Title: "+evento.getTitle());
             System.out.println("Description: "+evento.getDescription());
             System.out.println("Start time: "+evento.getStartTime());
+            System.out.println("\n-------------------\n");
+        }
+    }
+
+    public void mostrarEventosLugar(Evento[] eventos){
+        for (Evento evento : eventos) {
+            System.out.println("Title: "+evento.getTitle());
             System.out.println("City: "+evento.getCity());
             System.out.println("Venue name: "+evento.getVenueName());
             System.out.println("Venue address: "+evento.getVenueAddress());
             System.out.println("Country: "+evento.getCountry());
-            System.out.println();
+            System.out.println("\n-------------------\n");
         }
     }
 
-    public void mostrarTiempoCiudadEvento(Evento[] eventos)
+    public void mostrarMeteoCiudadEvento(Evento[] eventos)
     {
         ArrayList<String> nombreCiudades = new ArrayList<String>();
         for (int i = 0; i < eventos.length; i++) {
@@ -218,14 +206,13 @@ public class FuncJson {
                 if(!nombreCiudades.contains(eventos[i].getCity())){
                     nombreCiudades.add(eventos[i].getCity());
                     JsonObject tiempoCiudad = ciudad(eventos[i].getCity());
-                    DatosMeteoCiudad datosCiudad = MeteoCiudad(tiempoCiudad);
+                    DatosMeteoCiudad datosCiudad = meteoCiudad(tiempoCiudad);
                     mostrarMeteoCiudad(datosCiudad);
-                    System.out.println();
+                    System.out.println("\n-------------------\n");
                 }                        
                 
             }catch(NullPointerException e){
                 System.out.println("City not found "+e.getMessage()+"\n");
-                //Non pilla Caldas de Reis => en eventos->Caldas de Reyes
             }
         }        
     }
